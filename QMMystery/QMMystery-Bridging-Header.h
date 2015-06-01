@@ -8,12 +8,12 @@
 #import <MobClick.h>
 #import <UMSocial.h>
 #import <AFNetworking.h>
-
+#import <iCarousel.h>
 #import <SimplePurchase.h>
 #import "Service.h"
 #import <UIImageView+WebCache.h>
 
-#define kBaseURLString @"http://mimi.m.supfree.net/"
+#define kBaseURLString @"http://mimi.supfree.net/"
 
 /**
  *  app 软件在AppStore上的id
