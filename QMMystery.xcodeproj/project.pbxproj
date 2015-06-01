@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7B18B51F9DF07DCE41A3D4EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA3434E62B9B29B70A4BE6F /* libPods.a */; };
+		FF2E5D5B1B1C296B0000EF72 /* InfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E5D5A1B1C296B0000EF72 /* InfoModel.m */; };
+		FF7ED0881B1C02BF009B861E /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7ED0871B1C02BF009B861E /* Service.m */; };
+		FF7ED08B1B1C1D18009B861E /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7ED08A1B1C1D18009B861E /* Model.m */; };
 		FFAD4E081B1BE3C100E3D08A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD4E071B1BE3C100E3D08A /* AppDelegate.swift */; };
 		FFAD4E0A1B1BE3C100E3D08A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD4E091B1BE3C100E3D08A /* ViewController.swift */; };
 		FFAD4E0D1B1BE3C100E3D08A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFAD4E0B1B1BE3C100E3D08A /* Main.storyboard */; };
@@ -30,6 +33,13 @@
 		6AA3434E62B9B29B70A4BE6F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD40305C205C074806B0E6C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D67E889135E4FF3A4CD94EBC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FF2E5D591B1C296B0000EF72 /* InfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoModel.h; sourceTree = "<group>"; };
+		FF2E5D5A1B1C296B0000EF72 /* InfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoModel.m; sourceTree = "<group>"; };
+		FF7ED0851B1C02BF009B861E /* QMMystery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QMMystery-Bridging-Header.h"; sourceTree = "<group>"; };
+		FF7ED0861B1C02BF009B861E /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		FF7ED0871B1C02BF009B861E /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		FF7ED0891B1C1D18009B861E /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		FF7ED08A1B1C1D18009B861E /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		FFAD4E021B1BE3C100E3D08A /* QMMystery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QMMystery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFAD4E061B1BE3C100E3D08A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFAD4E071B1BE3C100E3D08A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +88,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF7ED0841B1C02A2009B861E /* OCHelp */ = {
+			isa = PBXGroup;
+			children = (
+				FF7ED0861B1C02BF009B861E /* Service.h */,
+				FF7ED0871B1C02BF009B861E /* Service.m */,
+				FF7ED0851B1C02BF009B861E /* QMMystery-Bridging-Header.h */,
+				FF7ED0891B1C1D18009B861E /* Model.h */,
+				FF7ED08A1B1C1D18009B861E /* Model.m */,
+				FF2E5D591B1C296B0000EF72 /* InfoModel.h */,
+				FF2E5D5A1B1C296B0000EF72 /* InfoModel.m */,
+			);
+			name = OCHelp;
+			sourceTree = "<group>";
+		};
 		FFAD4DF91B1BE3C100E3D08A = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +127,7 @@
 			children = (
 				FFAD4E071B1BE3C100E3D08A /* AppDelegate.swift */,
 				FFAD4E091B1BE3C100E3D08A /* ViewController.swift */,
+				FF7ED0841B1C02A2009B861E /* OCHelp */,
 				FFAD4E0B1B1BE3C100E3D08A /* Main.storyboard */,
 				FFAD4E0E1B1BE3C100E3D08A /* Images.xcassets */,
 				FFAD4E101B1BE3C100E3D08A /* LaunchScreen.xib */,
@@ -272,7 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFAD4E0A1B1BE3C100E3D08A /* ViewController.swift in Sources */,
+				FF2E5D5B1B1C296B0000EF72 /* InfoModel.m in Sources */,
 				FFAD4E081B1BE3C100E3D08A /* AppDelegate.swift in Sources */,
+				FF7ED0881B1C02BF009B861E /* Service.m in Sources */,
+				FF7ED08B1B1C1D18009B861E /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,9 +430,13 @@
 			baseConfigurationReference = D67E889135E4FF3A4CD94EBC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QMMystery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QMMystery/QMMystery-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -413,9 +445,12 @@
 			baseConfigurationReference = 6BD40305C205C074806B0E6C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = QMMystery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "QMMystery/QMMystery-Bridging-Header.h";
 			};
 			name = Release;
 		};
