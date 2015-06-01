@@ -11,6 +11,7 @@ import UIKit
 class ListTableController: UITableViewController {
 
     var model:Model?
+    var kind:String?
     
     
     override func viewDidLoad() {
@@ -18,7 +19,7 @@ class ListTableController: UITableViewController {
 
         SVProgressHUD.showWithStatus("正在加载", maskType: SVProgressHUDMaskType.Black)
         
-        Service.kind(model?.href, withPage: 1) { (array, error) -> Void in
+        Service.kind(kind, withPage: 1) { (array, error) -> Void in
             
             SVProgressHUD.dismiss()
         }

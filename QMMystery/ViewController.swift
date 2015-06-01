@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
 
-    var dataArray :Array<String> = ["植物","动物","人类","宇宙","地理"]
+    var dataArray :Array<String> = ["地理","宇宙","人类","动物","植物"]
+    var urlArray:Array<String> = ["ctrl.asp?id=1","ctrl.asp?id=2","ctrl.asp?id=3","ctrl.asp?id=4","ctrl.asp?id=5"]
     
     var dataDic:Dictionary<String,String>=["植物":"","动物":"","人类":"","宇宙":"","地理":""]
     
@@ -87,10 +88,12 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
             
             
         }
+        
+        
+        
         var label = itemView?.viewWithTag(100) as! UILabel
         
         label.text = dataArray[index] + "之谜"
-        
         
         itemView?.image = UIImage(named: dataArray[index]+".jpg")
         
@@ -99,10 +102,12 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
     
     func carousel(carousel: iCarousel!, didSelectItemAtIndex index: Int) {
         
+        
+        
         println(index)
         
     }
-    
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
