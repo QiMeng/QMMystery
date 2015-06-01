@@ -10,10 +10,16 @@ import UIKit
 
 class DetaileViewController: UIViewController {
 
+    var model:Model?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        Service.info(model?.href, withBlock: { (infoModel:InfoModel!, error) -> Void in
+            
+            SVProgressHUD.dismiss()
+        })
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -10,14 +10,18 @@ import UIKit
 
 class ListTableController: UITableViewController {
 
+    var model:Model?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        SVProgressHUD.showWithStatus("正在加载", maskType: SVProgressHUDMaskType.Black)
+        
+        Service.kind(model?.href, withPage: 1) { (array, error) -> Void in
+            
+            SVProgressHUD.dismiss()
+        }
     }
 
     override func didReceiveMemoryWarning() {

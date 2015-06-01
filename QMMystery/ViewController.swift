@@ -33,10 +33,10 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
 ////            SVProgressHUD.dismiss()
 ////        }
 //
-////        Service.kind("ctrl.asp?id=1", withPage: 1) { (array, error) -> Void in
-////            
-////            SVProgressHUD.dismiss()
-////        }
+//        Service.kind("ctrl.asp?id=1", withPage: 1) { (array, error) -> Void in
+//            
+//            SVProgressHUD.dismiss()
+//        }
 //
 //        
 //        Service.info("esc.asp?id=456", withBlock: { (infoModel:InfoModel!, error) -> Void in
