@@ -10,7 +10,9 @@ import UIKit
 
 class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
 
-    var dataArray :Array<Model> = []
+    var dataArray :Array<String> = ["植物","动物","人类","宇宙","地理"]
+    
+    var dataDic:Dictionary<String,String>=["植物":"","动物":"","人类":"","宇宙":"","地理":""]
     
     @IBOutlet weak var carouselView: iCarousel!
     
@@ -49,7 +51,7 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
     }
     
     func numberOfItemsInCarousel(carousel: iCarousel!) -> Int {
-        return 5
+        return dataArray.count
     }
 
     
@@ -58,18 +60,39 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
         
         var itemView = view as? UIImageView
         
+        
+        
         if let temp = itemView
         {
 
         }else
         {
-            itemView = UIImageView(frame: CGRectMake(0, 0, 250, 300))
+            itemView = UIImageView(frame: CGRectMake(0, 0, self.view.frame.size.width - 70, self.view.frame.size.height - 120))
+            
+            itemView?.autoresizingMask = UIViewAutoresizing.FlexibleHeight | UIViewAutoresizing.FlexibleWidth
+            
+            itemView?.contentMode = UIViewContentMode.ScaleAspectFill
+            itemView?.clipsToBounds = true
             itemView?.layer.borderWidth = 1;
-            itemView?.layer.borderColor = UIColor.blackColor().CGColor
+            itemView?.layer.borderColor = UIColor.whiteColor().CGColor
             itemView?.backgroundColor = UIColor.orangeColor()
+            
+            var label = UILabel(frame: CGRectMake(0, itemView!.frame.height - 40, itemView!.frame.width, 40))
+            label.tag = 100
+            label.textAlignment = NSTextAlignment.Center
+            label.textColor = UIColor.whiteColor()
+            label.backgroundColor = UIColor.clearColor()
+            label.font = UIFont.boldSystemFontOfSize(24)
+            itemView?.addSubview(label)
+            
+            
         }
+        var label = itemView?.viewWithTag(100) as! UILabel
+        
+        label.text = dataArray[index] + "之谜"
         
         
+        itemView?.image = UIImage(named: dataArray[index]+".jpg")
         
         return itemView
     }
