@@ -26,7 +26,7 @@
  *  友盟上的key
  *
  */
-#define kUMengKey @""
+#define kUMengKey @"556d456067e58e2b580044b5"
 
 
 #define kIAPClear @"mystery.cleariad"

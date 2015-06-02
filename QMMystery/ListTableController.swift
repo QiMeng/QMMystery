@@ -13,6 +13,8 @@ class ListTableController: UITableViewController {
     var kind:String?
     var dataArray:Array<Model> = []
     
+    var pageInt:Int = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +24,8 @@ class ListTableController: UITableViewController {
         backageView.image = UIImage(named: self.title!+"-暗")
         
         self.tableView.backgroundView = backageView
+        
+        self.tableView.tableFooterView = UIView()
 
         SVProgressHUD.showWithStatus("正在加载", maskType: SVProgressHUDMaskType.Black)
         
@@ -31,6 +35,8 @@ class ListTableController: UITableViewController {
             
             self.tableView.reloadData()
             SVProgressHUD.dismiss()
+            
+            ++self.pageInt
         }
     }
 
@@ -48,29 +54,58 @@ class ListTableController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
-        return dataArray.count
+        return dataArray.count + 1
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-
-        // Configure the cell...
         
-        let model = dataArray[indexPath.row] as Model
         
-        cell.textLabel?.text = model.title;
+        if indexPath.row == dataArray.count {
+            
+            let cell = tableView.dequeueReusableCellWithIdentifier("MoreCell", forIndexPath: indexPath) as! UITableViewCell
+            return cell
+            
+        }else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
+            
+            // Configure the cell...
+            
+            let model = dataArray[indexPath.row] as Model
+            
+            cell.textLabel?.text = model.title;
+            
+            
+            return cell
+        }
         
-
-        return cell
     }
 
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
         
-        let model = dataArray[indexPath.row] as Model
+        if indexPath.row == dataArray.count {
+            
+            SVProgressHUD.showWithStatus("正在加载", maskType: SVProgressHUDMaskType.Black)
+            
+            
+            
+            Service.kind(kind, withPage:Int32(self.pageInt)) { (array, error) -> Void in
+                
+                self.dataArray += array as! Array<Model>
+                
+                self.tableView.reloadData()
+                SVProgressHUD.dismiss()
+                ++self.pageInt
+            }
+            
+        }
+        else {
+            let model = dataArray[indexPath.row] as Model
+            
+            self.performSegueWithIdentifier("DetaileTableController", sender: model)
+        }
         
-        self.performSegueWithIdentifier("DetaileTableController", sender: model)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

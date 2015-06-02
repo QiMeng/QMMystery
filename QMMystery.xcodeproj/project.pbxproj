@@ -42,6 +42,9 @@
 		FF4970DE1B1D49CE00871D0A /* 植物之谜-暗@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970CF1B1D49CE00871D0A /* 植物之谜-暗@2x.png */; };
 		FF4970DF1B1D49CE00871D0A /* 植物之谜-暗@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970D01B1D49CE00871D0A /* 植物之谜-暗@3x.png */; };
 		FF4970E11B1D4F0A00871D0A /* DetaileTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4970E01B1D4F0A00871D0A /* DetaileTableController.swift */; };
+		FF4970E51B1D6C7C00871D0A /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970E21B1D6C7C00871D0A /* info.png */; };
+		FF4970E61B1D6C7C00871D0A /* info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970E31B1D6C7C00871D0A /* info@2x.png */; };
+		FF4970E71B1D6C7C00871D0A /* info@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970E41B1D6C7C00871D0A /* info@3x.png */; };
 		FF7ED0881B1C02BF009B861E /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7ED0871B1C02BF009B861E /* Service.m */; };
 		FF7ED08B1B1C1D18009B861E /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7ED08A1B1C1D18009B861E /* Model.m */; };
 		FFAD4E081B1BE3C100E3D08A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD4E071B1BE3C100E3D08A /* AppDelegate.swift */; };
@@ -101,6 +104,9 @@
 		FF4970CF1B1D49CE00871D0A /* 植物之谜-暗@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "植物之谜-暗@2x.png"; sourceTree = "<group>"; };
 		FF4970D01B1D49CE00871D0A /* 植物之谜-暗@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "植物之谜-暗@3x.png"; sourceTree = "<group>"; };
 		FF4970E01B1D4F0A00871D0A /* DetaileTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaileTableController.swift; sourceTree = "<group>"; };
+		FF4970E21B1D6C7C00871D0A /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		FF4970E31B1D6C7C00871D0A /* info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@2x.png"; sourceTree = "<group>"; };
+		FF4970E41B1D6C7C00871D0A /* info@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "info@3x.png"; sourceTree = "<group>"; };
 		FF7ED0851B1C02BF009B861E /* QMMystery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QMMystery-Bridging-Header.h"; sourceTree = "<group>"; };
 		FF7ED0861B1C02BF009B861E /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
 		FF7ED0871B1C02BF009B861E /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
@@ -149,6 +155,9 @@
 		6C4630DC1B1CA1AC00281438 /* Res */ = {
 			isa = PBXGroup;
 			children = (
+				FF4970E21B1D6C7C00871D0A /* info.png */,
+				FF4970E31B1D6C7C00871D0A /* info@2x.png */,
+				FF4970E41B1D6C7C00871D0A /* info@3x.png */,
 				FF4970C21B1D49CE00871D0A /* 地理之谜-暗.png */,
 				FF4970C31B1D49CE00871D0A /* 地理之谜-暗@2x.png */,
 				FF4970C41B1D49CE00871D0A /* 地理之谜-暗@3x.png */,
@@ -359,9 +368,11 @@
 				FF4970BD1B1D476F00871D0A /* 宇宙之谜@2x.png in Resources */,
 				FF4970B31B1D476F00871D0A /* 地理之谜.png in Resources */,
 				FF4970D21B1D49CE00871D0A /* 地理之谜-暗@2x.png in Resources */,
+				FF4970E71B1D6C7C00871D0A /* info@3x.png in Resources */,
 				FF4970DC1B1D49CE00871D0A /* 宇宙之谜-暗@3x.png in Resources */,
 				FF4970B61B1D476F00871D0A /* 动物之谜.png in Resources */,
 				FF4970BA1B1D476F00871D0A /* 人类之谜@2x.png in Resources */,
+				FF4970E61B1D6C7C00871D0A /* info@2x.png in Resources */,
 				FF4970DE1B1D49CE00871D0A /* 植物之谜-暗@2x.png in Resources */,
 				FF4970BF1B1D476F00871D0A /* 植物之谜.png in Resources */,
 				FF4970D91B1D49CE00871D0A /* 人类之谜-暗@3x.png in Resources */,
@@ -373,6 +384,7 @@
 				FF4970C11B1D476F00871D0A /* 植物之谜@3x.png in Resources */,
 				FF4970B41B1D476F00871D0A /* 地理之谜@2x.png in Resources */,
 				FFAD4E121B1BE3C100E3D08A /* LaunchScreen.xib in Resources */,
+				FF4970E51B1D6C7C00871D0A /* info.png in Resources */,
 				FF4970B81B1D476F00871D0A /* 动物之谜@3x.png in Resources */,
 				FF4970B51B1D476F00871D0A /* 地理之谜@3x.png in Resources */,
 				FF4970DD1B1D49CE00871D0A /* 植物之谜-暗.png in Resources */,
@@ -499,7 +511,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Li Wei (4X728K54LX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Li Wei (4X728K54LX)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -521,6 +534,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "63778686-107b-4e86-9b80-8ad7d1e15d93";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -544,7 +558,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Li Wei (4X728K54LX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Li Wei (4X728K54LX)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -559,6 +574,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "63778686-107b-4e86-9b80-8ad7d1e15d93";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -572,10 +588,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Li Wei (4X728K54LX)";
 				INFOPLIST_FILE = QMMystery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "63778686-107b-4e86-9b80-8ad7d1e15d93";
 				SWIFT_OBJC_BRIDGING_HEADER = "QMMystery/QMMystery-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -588,10 +606,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Li Wei (4X728K54LX)";
 				INFOPLIST_FILE = QMMystery/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "63778686-107b-4e86-9b80-8ad7d1e15d93";
 				SWIFT_OBJC_BRIDGING_HEADER = "QMMystery/QMMystery-Bridging-Header.h";
 			};
 			name = Release;

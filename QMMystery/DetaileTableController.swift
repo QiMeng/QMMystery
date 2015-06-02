@@ -17,9 +17,9 @@ class DetaileTableController: UITableViewController {
         super.viewDidLoad()
         
         let backageView = UIImageView(frame: self.view.bounds)
-        backageView.contentMode = UIViewContentMode.ScaleAspectFill
+        backageView.contentMode = UIViewContentMode.ScaleToFill
         backageView.clipsToBounds = true
-        backageView.image = UIImage(named: "地理之谜"+"-暗")
+        backageView.image = UIImage(named: "info")
         self.tableView.backgroundView = backageView
         
         self.tableView.tableFooterView = UIView()

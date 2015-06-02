@@ -23,30 +23,6 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
         carouselView.dataSource = self
         carouselView.type = iCarouselType.CoverFlow2
         carouselView.clipsToBounds = true
-//        carouselView.wrapEnabled = true
-        // Do any additional setup after loading the view, typically from a nib.
-        
-//        SVProgressHUD.showWithStatus("正在加载", maskType: SVProgressHUDMaskType.Black)
-//        
-////        Service.search("太阳", withPage: 1) { (array, error) -> Void in
-////            
-////            self.dataArray += array as! Array<Model>
-////            
-////            SVProgressHUD.dismiss()
-////        }
-//
-//        Service.kind("ctrl.asp?id=1", withPage: 1) { (array, error) -> Void in
-//            
-//            SVProgressHUD.dismiss()
-//        }
-//
-//        
-//        Service.info("esc.asp?id=456", withBlock: { (infoModel:InfoModel!, error) -> Void in
-//            
-//            SVProgressHUD.dismiss()
-//        })
-        
-        
         
     }
     
@@ -59,8 +35,6 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
     func carousel(carousel: iCarousel!, viewForItemAtIndex index: Int, reusingView view: UIView!) -> UIView! {
         
         var itemView = view as? UIImageView
-        
-        
         
         if let temp = itemView
         {
@@ -88,7 +62,6 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
             
         }
         
-        
         var label = itemView?.viewWithTag(100) as! UILabel
         
         label.text = dataArray[index]
@@ -115,6 +88,11 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
         
     }
 
+    override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {
+        
+        self.carouselView.reloadData()
+        
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
