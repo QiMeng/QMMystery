@@ -26,6 +26,10 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.carouselView.reloadData()
+    }
+    
     func numberOfItemsInCarousel(carousel: iCarousel!) -> Int {
         return dataArray.count
     }

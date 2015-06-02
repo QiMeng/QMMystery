@@ -64,17 +64,33 @@ class ListTableController: UITableViewController {
         if indexPath.row == dataArray.count {
             
             let cell = tableView.dequeueReusableCellWithIdentifier("MoreCell", forIndexPath: indexPath) as! UITableViewCell
+     
+            let view = UIView(frame: cell.bounds)
+            
+            cell.backgroundColor = UIColor.clearColor()
+            
+            view.backgroundColor = UIColor.clearColor()
+            
+            cell.backgroundView = view
+            
+            
             return cell
             
         }else {
             let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
             
-            // Configure the cell...
+            
+            let view = UIView(frame: cell.bounds)
+            cell.backgroundColor = UIColor.clearColor()
+            view.backgroundColor = UIColor.clearColor()
+            cell.backgroundView = view
+            
+            
+            cell.textLabel?.backgroundColor = UIColor.clearColor()
             
             let model = dataArray[indexPath.row] as Model
             
             cell.textLabel?.text = model.title;
-            
             
             return cell
         }

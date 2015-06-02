@@ -83,7 +83,15 @@ class DetaileTableController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
         
+        let view = UIView(frame: cell.bounds)
+        cell.backgroundColor = UIColor.clearColor()
+        view.backgroundColor = UIColor.clearColor()
+        cell.backgroundView = view
+        
+        
         let label = cell.viewWithTag(100) as! UILabel
+        
+        label.backgroundColor = UIColor.clearColor()
         
         if indexPath.row == 0 {
             label.text = self.infoMod?.title
@@ -101,7 +109,7 @@ class DetaileTableController: UITableViewController {
         else {
             let model = self.infoMod?.others[indexPath.row-2] as! Model
             label.text = model.title
-            label.textColor = UIColor.blueColor()
+            label.textColor = UIColor(red: 0, green: 135/255.0, blue: 1, alpha: 1)
             label.font = UIFont.systemFontOfSize(17);
             label.textAlignment = NSTextAlignment.Left
         }
