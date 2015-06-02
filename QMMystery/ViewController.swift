@@ -10,10 +10,9 @@ import UIKit
 
 class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
 
-    var dataArray :Array<String> = ["地理","宇宙","人类","动物","植物"]
+    var dataArray :Array<String> = ["地理之谜","宇宙之谜","人类之谜","动物之谜","植物之谜"]
     var urlArray:Array<String> = ["ctrl.asp?id=1","ctrl.asp?id=2","ctrl.asp?id=3","ctrl.asp?id=4","ctrl.asp?id=5"]
-    
-    var dataDic:Dictionary<String,String>=["植物":"","动物":"","人类":"","宇宙":"","地理":""]
+
     
     @IBOutlet weak var carouselView: iCarousel!
     
@@ -90,24 +89,47 @@ class ViewController: UIViewController , iCarouselDataSource,iCarouselDelegate {
         }
         
         
-        
         var label = itemView?.viewWithTag(100) as! UILabel
         
-        label.text = dataArray[index] + "之谜"
+        label.text = dataArray[index]
         
-        itemView?.image = UIImage(named: dataArray[index]+".jpg")
+        itemView?.image = UIImage(named: dataArray[index])
         
         return itemView
     }
     
+    func carousel(carousel: iCarousel!, valueForOption option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
+        
+//        return 1.0
+        switch option {
+            
+            case .Wrap: return 1.0
+            case .Spacing: return value * 1.05
+            default: return value
+        }
+    }
+    
     func carousel(carousel: iCarousel!, didSelectItemAtIndex index: Int) {
         
-        
-        
-        println(index)
+        self.performSegueWithIdentifier("ListTableController", sender: index)
         
     }
 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "ListTableController" {
+            
+            var ctrl = segue.destinationViewController as! ListTableController
+            
+            let index = sender as! Int
+            
+            ctrl.title = dataArray[index]
+            ctrl.kind = urlArray[index]
+            
+        }
+        
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

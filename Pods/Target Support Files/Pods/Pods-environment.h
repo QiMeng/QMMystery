@@ -102,6 +102,12 @@
 #define COCOAPODS_VERSION_MINOR_SimplePurchase 0
 #define COCOAPODS_VERSION_PATCH_SimplePurchase 1
 
+// UIImage+BlurredFrame
+#define COCOAPODS_POD_AVAILABLE_UIImage_BlurredFrame
+#define COCOAPODS_VERSION_MAJOR_UIImage_BlurredFrame 0
+#define COCOAPODS_VERSION_MINOR_UIImage_BlurredFrame 0
+#define COCOAPODS_VERSION_PATCH_UIImage_BlurredFrame 4
+
 // UMengAnalytics
 #define COCOAPODS_POD_AVAILABLE_UMengAnalytics
 #define COCOAPODS_VERSION_MAJOR_UMengAnalytics 3

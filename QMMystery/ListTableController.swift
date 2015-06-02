@@ -10,17 +10,26 @@ import UIKit
 
 class ListTableController: UITableViewController {
 
-    var model:Model?
     var kind:String?
-    
+    var dataArray:Array<Model> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let backageView = UIImageView(frame: self.view.bounds)
+        backageView.contentMode = UIViewContentMode.ScaleAspectFill
+        backageView.clipsToBounds = true
+        backageView.image = UIImage(named: self.title!+"-暗")
+        
+        self.tableView.backgroundView = backageView
 
         SVProgressHUD.showWithStatus("正在加载", maskType: SVProgressHUDMaskType.Black)
         
         Service.kind(kind, withPage: 1) { (array, error) -> Void in
             
+            self.dataArray += array as! Array<Model>
+            
+            self.tableView.reloadData()
             SVProgressHUD.dismiss()
         }
     }
@@ -33,70 +42,45 @@ class ListTableController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Potentially incomplete method implementation.
-        // Return the number of sections.
-        return 0
+
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
-        return 0
+
+        return dataArray.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
+        
+        let model = dataArray[indexPath.row] as Model
+        
+        cell.textLabel?.text = model.title;
+        
 
         return cell
     }
-    */
 
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        
+        let model = dataArray[indexPath.row] as Model
+        
+        self.performSegueWithIdentifier("DetaileTableController", sender: model)
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "DetaileTableController" {
+            
+            var ctrl = segue.destinationViewController as! DetaileTableController
+            ctrl.model = sender as? Model
+        }
+        
     }
-    */
 
 }

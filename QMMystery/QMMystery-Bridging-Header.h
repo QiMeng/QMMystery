@@ -9,9 +9,11 @@
 #import <UMSocial.h>
 #import <AFNetworking.h>
 #import <iCarousel.h>
+#import <UIImage+ImageEffects.h>
 #import <SimplePurchase.h>
-#import "Service.h"
 #import <UIImageView+WebCache.h>
+
+#import "Service.h"
 
 #define kBaseURLString @"http://mimi.supfree.net/"
 

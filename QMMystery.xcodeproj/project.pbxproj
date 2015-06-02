@@ -7,26 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C4630EC1B1CA1AC00281438 /* 人类.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630DD1B1CA1AC00281438 /* 人类.jpg */; };
-		6C4630ED1B1CA1AC00281438 /* 人类@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630DE1B1CA1AC00281438 /* 人类@2x.jpg */; };
-		6C4630EE1B1CA1AC00281438 /* 人类@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630DF1B1CA1AC00281438 /* 人类@3x.jpg */; };
-		6C4630EF1B1CA1AC00281438 /* 动物.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630E01B1CA1AC00281438 /* 动物.jpg */; };
-		6C4630F01B1CA1AC00281438 /* 动物@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630E11B1CA1AC00281438 /* 动物@2x.jpg */; };
-		6C4630F11B1CA1AC00281438 /* 动物@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630E21B1CA1AC00281438 /* 动物@3x.jpg */; };
-		6C4630F21B1CA1AC00281438 /* 地理.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630E31B1CA1AC00281438 /* 地理.jpg */; };
-		6C4630F31B1CA1AC00281438 /* 地理@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630E41B1CA1AC00281438 /* 地理@2x.jpg */; };
-		6C4630F41B1CA1AC00281438 /* 地理@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630E51B1CA1AC00281438 /* 地理@3x.jpg */; };
-		6C4630F51B1CA1AC00281438 /* 宇宙.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630E61B1CA1AC00281438 /* 宇宙.jpg */; };
-		6C4630F61B1CA1AC00281438 /* 宇宙@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630E71B1CA1AC00281438 /* 宇宙@2x.jpg */; };
-		6C4630F71B1CA1AC00281438 /* 宇宙@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630E81B1CA1AC00281438 /* 宇宙@3x.jpg */; };
-		6C4630F81B1CA1AC00281438 /* 植物.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630E91B1CA1AC00281438 /* 植物.jpg */; };
-		6C4630F91B1CA1AC00281438 /* 植物@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630EA1B1CA1AC00281438 /* 植物@2x.jpg */; };
-		6C4630FA1B1CA1AC00281438 /* 植物@3x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6C4630EB1B1CA1AC00281438 /* 植物@3x.jpg */; };
 		7B18B51F9DF07DCE41A3D4EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AA3434E62B9B29B70A4BE6F /* libPods.a */; };
 		FF2E5D5B1B1C296B0000EF72 /* InfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FF2E5D5A1B1C296B0000EF72 /* InfoModel.m */; };
 		FF2E5D5D1B1C50560000EF72 /* ListTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E5D5C1B1C50560000EF72 /* ListTableController.swift */; };
 		FF2E5D5F1B1C50660000EF72 /* SetTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E5D5E1B1C50660000EF72 /* SetTableController.swift */; };
-		FF2E5D611B1C50990000EF72 /* DetaileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E5D601B1C50990000EF72 /* DetaileViewController.swift */; };
+		FF4970B31B1D476F00871D0A /* 地理之谜.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970A41B1D476F00871D0A /* 地理之谜.png */; };
+		FF4970B41B1D476F00871D0A /* 地理之谜@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970A51B1D476F00871D0A /* 地理之谜@2x.png */; };
+		FF4970B51B1D476F00871D0A /* 地理之谜@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970A61B1D476F00871D0A /* 地理之谜@3x.png */; };
+		FF4970B61B1D476F00871D0A /* 动物之谜.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970A71B1D476F00871D0A /* 动物之谜.png */; };
+		FF4970B71B1D476F00871D0A /* 动物之谜@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970A81B1D476F00871D0A /* 动物之谜@2x.png */; };
+		FF4970B81B1D476F00871D0A /* 动物之谜@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970A91B1D476F00871D0A /* 动物之谜@3x.png */; };
+		FF4970B91B1D476F00871D0A /* 人类之谜.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970AA1B1D476F00871D0A /* 人类之谜.png */; };
+		FF4970BA1B1D476F00871D0A /* 人类之谜@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970AB1B1D476F00871D0A /* 人类之谜@2x.png */; };
+		FF4970BB1B1D476F00871D0A /* 人类之谜@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970AC1B1D476F00871D0A /* 人类之谜@3x.png */; };
+		FF4970BC1B1D476F00871D0A /* 宇宙之谜.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970AD1B1D476F00871D0A /* 宇宙之谜.png */; };
+		FF4970BD1B1D476F00871D0A /* 宇宙之谜@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970AE1B1D476F00871D0A /* 宇宙之谜@2x.png */; };
+		FF4970BE1B1D476F00871D0A /* 宇宙之谜@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970AF1B1D476F00871D0A /* 宇宙之谜@3x.png */; };
+		FF4970BF1B1D476F00871D0A /* 植物之谜.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970B01B1D476F00871D0A /* 植物之谜.png */; };
+		FF4970C01B1D476F00871D0A /* 植物之谜@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970B11B1D476F00871D0A /* 植物之谜@2x.png */; };
+		FF4970C11B1D476F00871D0A /* 植物之谜@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970B21B1D476F00871D0A /* 植物之谜@3x.png */; };
+		FF4970D11B1D49CE00871D0A /* 地理之谜-暗.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970C21B1D49CE00871D0A /* 地理之谜-暗.png */; };
+		FF4970D21B1D49CE00871D0A /* 地理之谜-暗@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970C31B1D49CE00871D0A /* 地理之谜-暗@2x.png */; };
+		FF4970D31B1D49CE00871D0A /* 地理之谜-暗@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970C41B1D49CE00871D0A /* 地理之谜-暗@3x.png */; };
+		FF4970D41B1D49CE00871D0A /* 动物之谜-暗.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970C51B1D49CE00871D0A /* 动物之谜-暗.png */; };
+		FF4970D51B1D49CE00871D0A /* 动物之谜-暗@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970C61B1D49CE00871D0A /* 动物之谜-暗@2x.png */; };
+		FF4970D61B1D49CE00871D0A /* 动物之谜-暗@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970C71B1D49CE00871D0A /* 动物之谜-暗@3x.png */; };
+		FF4970D71B1D49CE00871D0A /* 人类之谜-暗.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970C81B1D49CE00871D0A /* 人类之谜-暗.png */; };
+		FF4970D81B1D49CE00871D0A /* 人类之谜-暗@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970C91B1D49CE00871D0A /* 人类之谜-暗@2x.png */; };
+		FF4970D91B1D49CE00871D0A /* 人类之谜-暗@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970CA1B1D49CE00871D0A /* 人类之谜-暗@3x.png */; };
+		FF4970DA1B1D49CE00871D0A /* 宇宙之谜-暗.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970CB1B1D49CE00871D0A /* 宇宙之谜-暗.png */; };
+		FF4970DB1B1D49CE00871D0A /* 宇宙之谜-暗@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970CC1B1D49CE00871D0A /* 宇宙之谜-暗@2x.png */; };
+		FF4970DC1B1D49CE00871D0A /* 宇宙之谜-暗@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970CD1B1D49CE00871D0A /* 宇宙之谜-暗@3x.png */; };
+		FF4970DD1B1D49CE00871D0A /* 植物之谜-暗.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970CE1B1D49CE00871D0A /* 植物之谜-暗.png */; };
+		FF4970DE1B1D49CE00871D0A /* 植物之谜-暗@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970CF1B1D49CE00871D0A /* 植物之谜-暗@2x.png */; };
+		FF4970DF1B1D49CE00871D0A /* 植物之谜-暗@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = FF4970D01B1D49CE00871D0A /* 植物之谜-暗@3x.png */; };
+		FF4970E11B1D4F0A00871D0A /* DetaileTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4970E01B1D4F0A00871D0A /* DetaileTableController.swift */; };
 		FF7ED0881B1C02BF009B861E /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7ED0871B1C02BF009B861E /* Service.m */; };
 		FF7ED08B1B1C1D18009B861E /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7ED08A1B1C1D18009B861E /* Model.m */; };
 		FFAD4E081B1BE3C100E3D08A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAD4E071B1BE3C100E3D08A /* AppDelegate.swift */; };
@@ -50,27 +65,42 @@
 /* Begin PBXFileReference section */
 		6AA3434E62B9B29B70A4BE6F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BD40305C205C074806B0E6C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		6C4630DD1B1CA1AC00281438 /* 人类.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "人类.jpg"; sourceTree = "<group>"; };
-		6C4630DE1B1CA1AC00281438 /* 人类@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "人类@2x.jpg"; sourceTree = "<group>"; };
-		6C4630DF1B1CA1AC00281438 /* 人类@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "人类@3x.jpg"; sourceTree = "<group>"; };
-		6C4630E01B1CA1AC00281438 /* 动物.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "动物.jpg"; sourceTree = "<group>"; };
-		6C4630E11B1CA1AC00281438 /* 动物@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "动物@2x.jpg"; sourceTree = "<group>"; };
-		6C4630E21B1CA1AC00281438 /* 动物@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "动物@3x.jpg"; sourceTree = "<group>"; };
-		6C4630E31B1CA1AC00281438 /* 地理.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "地理.jpg"; sourceTree = "<group>"; };
-		6C4630E41B1CA1AC00281438 /* 地理@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "地理@2x.jpg"; sourceTree = "<group>"; };
-		6C4630E51B1CA1AC00281438 /* 地理@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "地理@3x.jpg"; sourceTree = "<group>"; };
-		6C4630E61B1CA1AC00281438 /* 宇宙.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "宇宙.jpg"; sourceTree = "<group>"; };
-		6C4630E71B1CA1AC00281438 /* 宇宙@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "宇宙@2x.jpg"; sourceTree = "<group>"; };
-		6C4630E81B1CA1AC00281438 /* 宇宙@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "宇宙@3x.jpg"; sourceTree = "<group>"; };
-		6C4630E91B1CA1AC00281438 /* 植物.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "植物.jpg"; sourceTree = "<group>"; };
-		6C4630EA1B1CA1AC00281438 /* 植物@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "植物@2x.jpg"; sourceTree = "<group>"; };
-		6C4630EB1B1CA1AC00281438 /* 植物@3x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "植物@3x.jpg"; sourceTree = "<group>"; };
 		D67E889135E4FF3A4CD94EBC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FF2E5D591B1C296B0000EF72 /* InfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoModel.h; sourceTree = "<group>"; };
 		FF2E5D5A1B1C296B0000EF72 /* InfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoModel.m; sourceTree = "<group>"; };
 		FF2E5D5C1B1C50560000EF72 /* ListTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableController.swift; sourceTree = "<group>"; };
 		FF2E5D5E1B1C50660000EF72 /* SetTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetTableController.swift; sourceTree = "<group>"; };
-		FF2E5D601B1C50990000EF72 /* DetaileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaileViewController.swift; sourceTree = "<group>"; };
+		FF4970A41B1D476F00871D0A /* 地理之谜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地理之谜.png"; sourceTree = "<group>"; };
+		FF4970A51B1D476F00871D0A /* 地理之谜@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地理之谜@2x.png"; sourceTree = "<group>"; };
+		FF4970A61B1D476F00871D0A /* 地理之谜@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地理之谜@3x.png"; sourceTree = "<group>"; };
+		FF4970A71B1D476F00871D0A /* 动物之谜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "动物之谜.png"; sourceTree = "<group>"; };
+		FF4970A81B1D476F00871D0A /* 动物之谜@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "动物之谜@2x.png"; sourceTree = "<group>"; };
+		FF4970A91B1D476F00871D0A /* 动物之谜@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "动物之谜@3x.png"; sourceTree = "<group>"; };
+		FF4970AA1B1D476F00871D0A /* 人类之谜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人类之谜.png"; sourceTree = "<group>"; };
+		FF4970AB1B1D476F00871D0A /* 人类之谜@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人类之谜@2x.png"; sourceTree = "<group>"; };
+		FF4970AC1B1D476F00871D0A /* 人类之谜@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人类之谜@3x.png"; sourceTree = "<group>"; };
+		FF4970AD1B1D476F00871D0A /* 宇宙之谜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宇宙之谜.png"; sourceTree = "<group>"; };
+		FF4970AE1B1D476F00871D0A /* 宇宙之谜@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宇宙之谜@2x.png"; sourceTree = "<group>"; };
+		FF4970AF1B1D476F00871D0A /* 宇宙之谜@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宇宙之谜@3x.png"; sourceTree = "<group>"; };
+		FF4970B01B1D476F00871D0A /* 植物之谜.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "植物之谜.png"; sourceTree = "<group>"; };
+		FF4970B11B1D476F00871D0A /* 植物之谜@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "植物之谜@2x.png"; sourceTree = "<group>"; };
+		FF4970B21B1D476F00871D0A /* 植物之谜@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "植物之谜@3x.png"; sourceTree = "<group>"; };
+		FF4970C21B1D49CE00871D0A /* 地理之谜-暗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地理之谜-暗.png"; sourceTree = "<group>"; };
+		FF4970C31B1D49CE00871D0A /* 地理之谜-暗@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地理之谜-暗@2x.png"; sourceTree = "<group>"; };
+		FF4970C41B1D49CE00871D0A /* 地理之谜-暗@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "地理之谜-暗@3x.png"; sourceTree = "<group>"; };
+		FF4970C51B1D49CE00871D0A /* 动物之谜-暗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "动物之谜-暗.png"; sourceTree = "<group>"; };
+		FF4970C61B1D49CE00871D0A /* 动物之谜-暗@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "动物之谜-暗@2x.png"; sourceTree = "<group>"; };
+		FF4970C71B1D49CE00871D0A /* 动物之谜-暗@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "动物之谜-暗@3x.png"; sourceTree = "<group>"; };
+		FF4970C81B1D49CE00871D0A /* 人类之谜-暗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人类之谜-暗.png"; sourceTree = "<group>"; };
+		FF4970C91B1D49CE00871D0A /* 人类之谜-暗@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人类之谜-暗@2x.png"; sourceTree = "<group>"; };
+		FF4970CA1B1D49CE00871D0A /* 人类之谜-暗@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "人类之谜-暗@3x.png"; sourceTree = "<group>"; };
+		FF4970CB1B1D49CE00871D0A /* 宇宙之谜-暗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宇宙之谜-暗.png"; sourceTree = "<group>"; };
+		FF4970CC1B1D49CE00871D0A /* 宇宙之谜-暗@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宇宙之谜-暗@2x.png"; sourceTree = "<group>"; };
+		FF4970CD1B1D49CE00871D0A /* 宇宙之谜-暗@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "宇宙之谜-暗@3x.png"; sourceTree = "<group>"; };
+		FF4970CE1B1D49CE00871D0A /* 植物之谜-暗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "植物之谜-暗.png"; sourceTree = "<group>"; };
+		FF4970CF1B1D49CE00871D0A /* 植物之谜-暗@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "植物之谜-暗@2x.png"; sourceTree = "<group>"; };
+		FF4970D01B1D49CE00871D0A /* 植物之谜-暗@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "植物之谜-暗@3x.png"; sourceTree = "<group>"; };
+		FF4970E01B1D4F0A00871D0A /* DetaileTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetaileTableController.swift; sourceTree = "<group>"; };
 		FF7ED0851B1C02BF009B861E /* QMMystery-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QMMystery-Bridging-Header.h"; sourceTree = "<group>"; };
 		FF7ED0861B1C02BF009B861E /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
 		FF7ED0871B1C02BF009B861E /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
@@ -119,21 +149,36 @@
 		6C4630DC1B1CA1AC00281438 /* Res */ = {
 			isa = PBXGroup;
 			children = (
-				6C4630DD1B1CA1AC00281438 /* 人类.jpg */,
-				6C4630DE1B1CA1AC00281438 /* 人类@2x.jpg */,
-				6C4630DF1B1CA1AC00281438 /* 人类@3x.jpg */,
-				6C4630E01B1CA1AC00281438 /* 动物.jpg */,
-				6C4630E11B1CA1AC00281438 /* 动物@2x.jpg */,
-				6C4630E21B1CA1AC00281438 /* 动物@3x.jpg */,
-				6C4630E31B1CA1AC00281438 /* 地理.jpg */,
-				6C4630E41B1CA1AC00281438 /* 地理@2x.jpg */,
-				6C4630E51B1CA1AC00281438 /* 地理@3x.jpg */,
-				6C4630E61B1CA1AC00281438 /* 宇宙.jpg */,
-				6C4630E71B1CA1AC00281438 /* 宇宙@2x.jpg */,
-				6C4630E81B1CA1AC00281438 /* 宇宙@3x.jpg */,
-				6C4630E91B1CA1AC00281438 /* 植物.jpg */,
-				6C4630EA1B1CA1AC00281438 /* 植物@2x.jpg */,
-				6C4630EB1B1CA1AC00281438 /* 植物@3x.jpg */,
+				FF4970C21B1D49CE00871D0A /* 地理之谜-暗.png */,
+				FF4970C31B1D49CE00871D0A /* 地理之谜-暗@2x.png */,
+				FF4970C41B1D49CE00871D0A /* 地理之谜-暗@3x.png */,
+				FF4970C51B1D49CE00871D0A /* 动物之谜-暗.png */,
+				FF4970C61B1D49CE00871D0A /* 动物之谜-暗@2x.png */,
+				FF4970C71B1D49CE00871D0A /* 动物之谜-暗@3x.png */,
+				FF4970C81B1D49CE00871D0A /* 人类之谜-暗.png */,
+				FF4970C91B1D49CE00871D0A /* 人类之谜-暗@2x.png */,
+				FF4970CA1B1D49CE00871D0A /* 人类之谜-暗@3x.png */,
+				FF4970CB1B1D49CE00871D0A /* 宇宙之谜-暗.png */,
+				FF4970CC1B1D49CE00871D0A /* 宇宙之谜-暗@2x.png */,
+				FF4970CD1B1D49CE00871D0A /* 宇宙之谜-暗@3x.png */,
+				FF4970CE1B1D49CE00871D0A /* 植物之谜-暗.png */,
+				FF4970CF1B1D49CE00871D0A /* 植物之谜-暗@2x.png */,
+				FF4970D01B1D49CE00871D0A /* 植物之谜-暗@3x.png */,
+				FF4970A41B1D476F00871D0A /* 地理之谜.png */,
+				FF4970A51B1D476F00871D0A /* 地理之谜@2x.png */,
+				FF4970A61B1D476F00871D0A /* 地理之谜@3x.png */,
+				FF4970A71B1D476F00871D0A /* 动物之谜.png */,
+				FF4970A81B1D476F00871D0A /* 动物之谜@2x.png */,
+				FF4970A91B1D476F00871D0A /* 动物之谜@3x.png */,
+				FF4970AA1B1D476F00871D0A /* 人类之谜.png */,
+				FF4970AB1B1D476F00871D0A /* 人类之谜@2x.png */,
+				FF4970AC1B1D476F00871D0A /* 人类之谜@3x.png */,
+				FF4970AD1B1D476F00871D0A /* 宇宙之谜.png */,
+				FF4970AE1B1D476F00871D0A /* 宇宙之谜@2x.png */,
+				FF4970AF1B1D476F00871D0A /* 宇宙之谜@3x.png */,
+				FF4970B01B1D476F00871D0A /* 植物之谜.png */,
+				FF4970B11B1D476F00871D0A /* 植物之谜@2x.png */,
+				FF4970B21B1D476F00871D0A /* 植物之谜@3x.png */,
 			);
 			path = Res;
 			sourceTree = SOURCE_ROOT;
@@ -149,9 +194,9 @@
 		FF7ED0841B1C02A2009B861E /* OCHelp */ = {
 			isa = PBXGroup;
 			children = (
+				FF7ED0851B1C02BF009B861E /* QMMystery-Bridging-Header.h */,
 				FF7ED0861B1C02BF009B861E /* Service.h */,
 				FF7ED0871B1C02BF009B861E /* Service.m */,
-				FF7ED0851B1C02BF009B861E /* QMMystery-Bridging-Header.h */,
 				FF7ED0891B1C1D18009B861E /* Model.h */,
 				FF7ED08A1B1C1D18009B861E /* Model.m */,
 				FF2E5D591B1C296B0000EF72 /* InfoModel.h */,
@@ -186,7 +231,7 @@
 				FFAD4E071B1BE3C100E3D08A /* AppDelegate.swift */,
 				FFAD4E091B1BE3C100E3D08A /* ViewController.swift */,
 				FF2E5D5C1B1C50560000EF72 /* ListTableController.swift */,
-				FF2E5D601B1C50990000EF72 /* DetaileViewController.swift */,
+				FF4970E01B1D4F0A00871D0A /* DetaileTableController.swift */,
 				FF2E5D5E1B1C50660000EF72 /* SetTableController.swift */,
 				6C4630DC1B1CA1AC00281438 /* Res */,
 				FF7ED0841B1C02A2009B861E /* OCHelp */,
@@ -305,24 +350,39 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C4630F71B1CA1AC00281438 /* 宇宙@3x.jpg in Resources */,
-				6C4630F61B1CA1AC00281438 /* 宇宙@2x.jpg in Resources */,
-				6C4630F51B1CA1AC00281438 /* 宇宙.jpg in Resources */,
-				6C4630F31B1CA1AC00281438 /* 地理@2x.jpg in Resources */,
-				6C4630F11B1CA1AC00281438 /* 动物@3x.jpg in Resources */,
-				6C4630EF1B1CA1AC00281438 /* 动物.jpg in Resources */,
-				6C4630EE1B1CA1AC00281438 /* 人类@3x.jpg in Resources */,
-				6C4630F91B1CA1AC00281438 /* 植物@2x.jpg in Resources */,
+				FF4970BE1B1D476F00871D0A /* 宇宙之谜@3x.png in Resources */,
+				FF4970B71B1D476F00871D0A /* 动物之谜@2x.png in Resources */,
+				FF4970C01B1D476F00871D0A /* 植物之谜@2x.png in Resources */,
+				FF4970DF1B1D49CE00871D0A /* 植物之谜-暗@3x.png in Resources */,
+				FF4970BC1B1D476F00871D0A /* 宇宙之谜.png in Resources */,
+				FF4970BB1B1D476F00871D0A /* 人类之谜@3x.png in Resources */,
+				FF4970BD1B1D476F00871D0A /* 宇宙之谜@2x.png in Resources */,
+				FF4970B31B1D476F00871D0A /* 地理之谜.png in Resources */,
+				FF4970D21B1D49CE00871D0A /* 地理之谜-暗@2x.png in Resources */,
+				FF4970DC1B1D49CE00871D0A /* 宇宙之谜-暗@3x.png in Resources */,
+				FF4970B61B1D476F00871D0A /* 动物之谜.png in Resources */,
+				FF4970BA1B1D476F00871D0A /* 人类之谜@2x.png in Resources */,
+				FF4970DE1B1D49CE00871D0A /* 植物之谜-暗@2x.png in Resources */,
+				FF4970BF1B1D476F00871D0A /* 植物之谜.png in Resources */,
+				FF4970D91B1D49CE00871D0A /* 人类之谜-暗@3x.png in Resources */,
+				FF4970B91B1D476F00871D0A /* 人类之谜.png in Resources */,
 				FFAD4E0D1B1BE3C100E3D08A /* Main.storyboard in Resources */,
-				6C4630F41B1CA1AC00281438 /* 地理@3x.jpg in Resources */,
-				6C4630F01B1CA1AC00281438 /* 动物@2x.jpg in Resources */,
-				6C4630F21B1CA1AC00281438 /* 地理.jpg in Resources */,
-				6C4630F81B1CA1AC00281438 /* 植物.jpg in Resources */,
-				6C4630FA1B1CA1AC00281438 /* 植物@3x.jpg in Resources */,
-				6C4630ED1B1CA1AC00281438 /* 人类@2x.jpg in Resources */,
+				FF4970D41B1D49CE00871D0A /* 动物之谜-暗.png in Resources */,
+				FF4970D71B1D49CE00871D0A /* 人类之谜-暗.png in Resources */,
+				FF4970DA1B1D49CE00871D0A /* 宇宙之谜-暗.png in Resources */,
+				FF4970C11B1D476F00871D0A /* 植物之谜@3x.png in Resources */,
+				FF4970B41B1D476F00871D0A /* 地理之谜@2x.png in Resources */,
 				FFAD4E121B1BE3C100E3D08A /* LaunchScreen.xib in Resources */,
-				6C4630EC1B1CA1AC00281438 /* 人类.jpg in Resources */,
+				FF4970B81B1D476F00871D0A /* 动物之谜@3x.png in Resources */,
+				FF4970B51B1D476F00871D0A /* 地理之谜@3x.png in Resources */,
+				FF4970DD1B1D49CE00871D0A /* 植物之谜-暗.png in Resources */,
 				FFAD4E0F1B1BE3C100E3D08A /* Images.xcassets in Resources */,
+				FF4970D11B1D49CE00871D0A /* 地理之谜-暗.png in Resources */,
+				FF4970D31B1D49CE00871D0A /* 地理之谜-暗@3x.png in Resources */,
+				FF4970D51B1D49CE00871D0A /* 动物之谜-暗@2x.png in Resources */,
+				FF4970D81B1D49CE00871D0A /* 人类之谜-暗@2x.png in Resources */,
+				FF4970D61B1D49CE00871D0A /* 动物之谜-暗@3x.png in Resources */,
+				FF4970DB1B1D49CE00871D0A /* 宇宙之谜-暗@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,9 +438,9 @@
 				FF2E5D5D1B1C50560000EF72 /* ListTableController.swift in Sources */,
 				FF2E5D5F1B1C50660000EF72 /* SetTableController.swift in Sources */,
 				FFAD4E081B1BE3C100E3D08A /* AppDelegate.swift in Sources */,
-				FF2E5D611B1C50990000EF72 /* DetaileViewController.swift in Sources */,
 				FF7ED0881B1C02BF009B861E /* Service.m in Sources */,
 				FF7ED08B1B1C1D18009B861E /* Model.m in Sources */,
+				FF4970E11B1D4F0A00871D0A /* DetaileTableController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,4 +10,11 @@
 
 @implementation InfoModel
 
+- (void)setContent:(NSString *)content {
+    
+    _content = content;
+//    _content = [content stringByReplacingOccurrencesOfString:@" 　　" withString:@"\n 　　"];
+    
+}
+
 @end
