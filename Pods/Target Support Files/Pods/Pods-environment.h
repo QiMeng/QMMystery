@@ -108,11 +108,11 @@
 #define COCOAPODS_VERSION_MINOR_UIImage_BlurredFrame 0
 #define COCOAPODS_VERSION_PATCH_UIImage_BlurredFrame 4
 
-// UMengAnalytics
-#define COCOAPODS_POD_AVAILABLE_UMengAnalytics
-#define COCOAPODS_VERSION_MAJOR_UMengAnalytics 3
-#define COCOAPODS_VERSION_MINOR_UMengAnalytics 5
-#define COCOAPODS_VERSION_PATCH_UMengAnalytics 8
+// UMengAnalytics-NO-IDFA
+#define COCOAPODS_POD_AVAILABLE_UMengAnalytics_NO_IDFA
+#define COCOAPODS_VERSION_MAJOR_UMengAnalytics_NO_IDFA 3
+#define COCOAPODS_VERSION_MINOR_UMengAnalytics_NO_IDFA 4
+#define COCOAPODS_VERSION_PATCH_UMengAnalytics_NO_IDFA 7
 
 // UMengSocial
 #define COCOAPODS_POD_AVAILABLE_UMengSocial
