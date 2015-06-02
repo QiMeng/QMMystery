@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
         
-        MobClick.startWithAppkey(kUMengKey, reportPolicy: BATCH, channelId: "ceshi")
+        MobClick.startWithAppkey(kUMengKey, reportPolicy: BATCH, channelId: "AppStore")
         
         return true
     }

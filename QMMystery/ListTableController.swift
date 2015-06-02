@@ -104,15 +104,25 @@ class ListTableController: UITableViewController {
             
             SVProgressHUD.showWithStatus("正在加载", maskType: SVProgressHUDMaskType.Black)
             
-            
-            
             Service.kind(kind, withPage:Int32(self.pageInt)) { (array, error) -> Void in
                 
-                self.dataArray += array as! Array<Model>
+                if self.dataArray.count > 0 && array.count > 0 {
+                    
+                    let model1 = self.dataArray.last as Model!
+                    let model2 = array.last as! Model
+                    
+                    if model1.href == model2.href {
+                        
+                        SVProgressHUD.showErrorWithStatus("没有更多了")
+                        return
+                    }
+                }
                 
+                self.dataArray += array as! Array<Model>
                 self.tableView.reloadData()
                 SVProgressHUD.dismiss()
                 ++self.pageInt
+                
             }
             
         }
